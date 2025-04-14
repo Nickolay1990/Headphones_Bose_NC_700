@@ -1,19 +1,32 @@
-<header class="header">
+<header>
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
+    <div class="header-wrapper">
+      <a class="header-logo-link" href="#">
+        <svg class="header-logo" width="100" height="12">
+          <use href="/symbol-defs.svg#icon-bose-logo-2"></use>
         </svg>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <button class="header-burger-button" type="button">
+        <svg class="header-burger-pic" width="22" height="11">
+          <use href="/symbol-defs.svg#icon-hamburger"></use>
+        </svg>
+      </button>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li>
+            <a href="#characteristics">Characteristics</a>
+          </li>
+          <li>
+            <a href="#history">History</a>
+          </li>
+          <li>
+            <a href="#reviews">Reviews</a>
+          </li>
+          <li>
+            <a href="#payment">Payment and delivery</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
