@@ -1,0 +1,150 @@
+.hero {
+	padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+	.hero {
+		padding-top: 50px;
+	}
+	.hero > .container {
+		display: flex;
+		gap: 60px;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 1440px) {
+	.hero {
+		padding-top: 70px;
+	}
+	.hero > .container {
+		gap: 55px;
+	}
+	.hero-wrapper {
+		width: 605px;
+	}
+}
+
+.hero-first-text {
+	max-width: 222px;
+	line-height: 1.25;
+	letter-spacing: -0.1px;
+	margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+	.hero-first-text {
+		max-width: 253px;
+		line-height: 1.45;
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.hero-first-text {
+		line-height: 1.25;
+		margin-bottom: 36px;
+	}
+}
+
+.hero-second-text {
+	max-width: 93px;
+	margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+	.hero-second-text {
+		max-width: 110px;
+		margin-bottom: 105px;
+		font-size: 16px;
+		line-height: 1.45;
+	}
+}
+
+@media (min-width: 1440px) {
+	.hero-second-text {
+		line-height: 1.25;
+		margin-bottom: 94px;
+	}
+	.hero-inner-wrapper {
+		padding-left: 110px;
+	}
+}
+
+.hero-title {
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 1;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #e7e7e7;
+	margin-bottom: 32px;
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+	.hero-title {
+		margin-bottom: 40px;
+		font-size: 42px;
+		max-width: 289px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.hero-title {
+		margin-bottom: 86px;
+		max-width: none;
+		font-size: 74px;
+	}
+}
+
+.hero-order-btn {
+	width: 100%;
+	min-height: 58px;
+	max-width: 280px;
+	margin: 0 auto;
+	background: #df3d3a;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.9);
+	border: none;
+	margin-bottom: 32px;
+	transition: background 250ms;
+}
+
+@media (min-width: 768px) {
+	.hero-order-btn {
+		width: 294px;
+		max-width: none;
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 1440px) {
+	.hero-order-btn {
+		margin: 0;
+		height: 68px;
+		font-size: 20px;
+
+		background-size: 200% 100%;
+		background-image: linear-gradient(to right, transparent 50%, #b5302d 50%);
+		transition: background-position 0.3s, color 0.5s, background-color 0.5s;
+	}
+	.hero-order-btn:hover {
+		background-position: -100% 100%;
+	}
+}
+
+.hero-image {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+@media (min-width: 1440px) {
+	.hero-image {
+		margin: 0;
+		flex-grow: 1;
+	}
+}

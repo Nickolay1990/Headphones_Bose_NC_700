@@ -7,13 +7,14 @@
 	z-index: 1000;
 	transform: translate(-100%);
 	transition: transform 250ms;
-	padding: 100px 20px;
+	padding: 100px 20px 0;
+	background-color: #191919;
 }
 
 @media screen and (min-width: 768px) {
 	.mobile-menu {
 		transform: translate(0, -100%);
-		padding: 119px 60px;
+		padding: 119px 60px 0;
 		height: 367px;
 		box-shadow: 0 20px 80px 0 #000;
 	}
