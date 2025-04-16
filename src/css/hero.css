@@ -130,7 +130,7 @@
 
 		background-size: 200% 100%;
 		background-image: linear-gradient(to right, transparent 50%, #b5302d 50%);
-		transition: background-position 0.3s, color 0.5s, background-color 0.5s;
+		transition: background-position 0.3s, background-color 0.5s;
 	}
 	.hero-order-btn:hover {
 		background-position: -100% 100%;
