@@ -111,7 +111,6 @@
 	color: rgba(255, 255, 255, 0.9);
 	border: none;
 	margin-bottom: 32px;
-	transition: background 250ms;
 }
 
 @media (min-width: 768px) {
@@ -130,7 +129,7 @@
 
 		background-size: 200% 100%;
 		background-image: linear-gradient(to right, transparent 50%, #b5302d 50%);
-		transition: background-position 0.3s, background-color 0.5s;
+		transition: background-position 0.5s, background-color 0.5s;
 	}
 	.hero-order-btn:hover {
 		background-position: -100% 100%;
