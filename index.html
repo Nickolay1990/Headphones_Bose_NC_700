@@ -18,7 +18,7 @@
 			rel="stylesheet"
 		/>
 		<script type="module" crossorigin src="/Practice_7/index.js"></script>
-		<link rel="stylesheet" crossorigin href="/Practice_7/assets/index-D1v0pm79.css">
+		<link rel="stylesheet" crossorigin href="/Practice_7/assets/index-Bs5f-8Ao.css">
 	</head>
 	<body>
 		<header>
@@ -87,7 +87,7 @@
 			<p class="hero-second-text">Up to 20 hours of playback</p>
 			<div class="hero-inner-wrapper">
 				<h1 class="hero-title">Headphones Bose NC 700</h1>
-				<button class="hero-order-btn">order</button>
+				<button class="hero-order-btn" data-modal>order</button>
 			</div>
 		</div>
 		<picture>
@@ -105,5 +105,33 @@
 </section>
 
 		</main>
+
+		<div class="backdrop">
+	<div class="modal">
+		<button class="modal-close-btn" data-modal>
+			<svg width="30" height="30">
+				<use href="/Practice_7/symbol-defs.svg#icon-close-large"></use>
+			</svg>
+		</button>
+		<p class="form-text">Request a call from a manager</p>
+		<form name="order" class="modal-form">
+			<label class="modal-form-label">
+				Name:
+				<input type="text" class="modal-form-input" placeholder="John Doe" />
+			</label>
+			<label class="modal-form-label">
+				Tel:
+				<input type="tel" class="modal-form-input" placeholder="+380951234567" />
+			</label>
+			<label class="modal-form-label">
+				Email:
+				<input type="email" class="modal-form-input" placeholder="johnDoe@gmail.com" />
+			</label>
+			<button type="submit" class="hero-order-btn">Order call</button>
+		</form>
+	</div>
+</div>
+
+
 	</body>
 </html>
