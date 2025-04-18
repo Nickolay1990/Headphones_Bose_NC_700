@@ -2,6 +2,7 @@
 @import url(./mobile-menu.css);
 @import url(./hero.css);
 @import url(./modal.css);
+@import url(./premium-design.css);
 
 @font-face {
 	font-family: 'Gilroy';
@@ -54,7 +55,7 @@ a {
 .container {
 	max-width: 480px;
 	margin: 0 auto;
-	padding: 0 18px;
+	padding: 0 20px;
 }
 
 @media screen and (min-width: 768px) {
