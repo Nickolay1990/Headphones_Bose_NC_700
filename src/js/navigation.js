@@ -1,6 +1,7 @@
 export const DOM = {
 	mobileMenuToggleButtons: document.querySelectorAll('[data-mobile]'),
-	miobileMenu: document.querySelector('.mobile-menu'),
+	mobileMenu: document.querySelector('.mobile-menu'),
 	toggleModalButtons: document.querySelectorAll('[data-modal]'),
 	modalWindow: document.querySelector('.backdrop'),
+	navigationLinks: document.querySelectorAll('.mobile-menu a'),
 };

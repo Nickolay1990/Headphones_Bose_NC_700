@@ -3,6 +3,7 @@
 @import url(./hero.css);
 @import url(./modal.css);
 @import url(./premium-design.css);
+@import url(./capable.css);
 
 @font-face {
 	font-family: 'Gilroy';
@@ -16,6 +17,10 @@
 	src: url('/Gilroy-Semibold.woff2') format('woff2');
 	font-weight: 600;
 	font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
