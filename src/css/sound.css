@@ -1,0 +1,115 @@
+.sound {
+	padding-top: 52px;
+}
+
+@media (min-width: 768px) {
+	.sound {
+		padding-top: 100px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.sound {
+		padding-top: 170px;
+	}
+}
+
+.sound-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #e7e7e7;
+	margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+	.sound-title {
+		font-size: 30px;
+		text-align: right;
+	}
+}
+
+@media (min-width: 1440px) {
+	.sound-title {
+		margin-bottom: 50px;
+		font-size: 54px;
+	}
+}
+
+.sound-picture {
+	margin-bottom: 32px;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.sound-picture {
+		width: 100vw;
+		max-width: 768px;
+		margin-left: -60px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.sound-picture {
+		max-width: 1440px;
+		margin-left: -80px;
+		margin-bottom: 50px;
+	}
+}
+
+.sound-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 42px;
+}
+
+@media (min-width: 768px) {
+	.sound-list {
+		flex-direction: row;
+		column-gap: 60px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.sound-list {
+		column-gap: 40px;
+		justify-content: center;
+	}
+	.sound-list-item {
+		width: 500px;
+	}
+}
+
+.sound-list-item-title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.25;
+	color: #e7e7e7;
+	margin-bottom: 16px;
+}
+
+@media (min-width: 1440px) {
+	.sound-list-item-title {
+		margin-bottom: 20px;
+		font-size: 28px;
+	}
+}
+
+.sound-list-item-text {
+	line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+	.sound-list-item-text {
+		font-size: 16px;
+		line-height: 1.45;
+	}
+}
+
+@media (min-width: 1440px) {
+	.sound-list-item-text {
+		font-size: 20px;
+	}
+}
