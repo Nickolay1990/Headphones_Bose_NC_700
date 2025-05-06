@@ -1,0 +1,127 @@
+.history {
+	background-image: url(/img/guarantees/guarantees-back.png);
+	background-repeat: no-repeat;
+	background-position: right -110px top 54px;
+	background-size: 250px 82px;
+}
+
+.history .section-main-title {
+	width: 124px;
+}
+
+.history .section-text {
+	margin-bottom: 32px;
+}
+
+.history .section-image {
+	margin-bottom: 32px;
+}
+
+.history-caption::before {
+	content: '';
+	display: block;
+	width: 44px;
+	height: 32px;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 32'><path fill='%23df3d3a' d='M0 15.411v-15.411h17.875v11.603c0 12.087-5.958 18.886-17.875 20.397v-6.346c3.010-0.786 5.068-1.934 6.173-3.445 1.167-1.511 1.874-3.777 2.119-6.799h-8.293z'/><path fill='%23df3d3a' d='M25.645 15.411v-15.411h17.875v11.603c0 12.087-5.958 18.886-17.875 20.397v-6.346c3.010-0.786 5.068-1.934 6.173-3.445 1.167-1.511 1.874-3.777 2.119-6.799h-8.293z'/></svg>");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 24px;
+}
+
+.history-author {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (min-width: 768px) {
+	.history {
+		background-image: none;
+	}
+	.history .container {
+		padding-right: 0;
+		position: relative;
+	}
+	.history-wrapper {
+		width: 294px;
+		margin-bottom: 32px;
+	}
+	#image-developers {
+		position: absolute;
+		width: 354px;
+		height: 524px;
+		top: 0;
+		right: 0;
+	}
+	.history-wrapper .section-text:first-of-type {
+		margin-bottom: 85px;
+	}
+	.history-wrapper .section-text:last-of-type {
+		margin-bottom: 0px;
+	}
+	.container > .section-text {
+		width: 294px;
+		margin-left: auto;
+		margin-right: 60px;
+		margin-bottom: 133px;
+	}
+	.history figure {
+		display: flex;
+		gap: 58px;
+	}
+	.history .section-image {
+		margin-bottom: 0;
+	}
+	.history picture {
+		flex-shrink: 0;
+	}
+	#history-boss-image {
+		margin-top: -160px;
+	}
+	.history figcaption {
+		width: 296px;
+	}
+	.history .section-main-title {
+		width: 155px;
+	}
+	.history-caption::before {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.history {
+	}
+	.history .container {
+		padding-left: 190px;
+	}
+	.history-wrapper {
+		width: 400px;
+		margin-bottom: 40px;
+	}
+	.history .section-main-title {
+		width: 279px;
+	}
+	.history-wrapper .section-text:first-of-type {
+		margin-bottom: 74px;
+	}
+	#image-developers {
+		width: 700px;
+		height: 628px;
+	}
+	.container > .section-text {
+		width: 510px;
+		margin-right: 190px;
+		margin-bottom: 125px;
+	}
+	.history figure {
+		gap: 260px;
+	}
+	.history .section-second-title {
+		margin-bottom: 32px;
+	}
+	#history-boss-image {
+		margin-top: -117px;
+	}
+	.history figcaption {
+		width: 382px;
+	}
+}

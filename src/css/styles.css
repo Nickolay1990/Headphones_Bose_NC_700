@@ -7,6 +7,7 @@
 @import url(./sound.css);
 @import url(./technology.css);
 @import url(./guarantees.css);
+@import url(./history.css);
 
 @font-face {
 	font-family: 'Gilroy';
@@ -32,6 +33,7 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.25;
 }
 
 * {
