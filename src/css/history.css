@@ -88,8 +88,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-	.history {
-	}
 	.history .container {
 		padding-left: 190px;
 	}
