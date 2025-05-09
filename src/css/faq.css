@@ -1,0 +1,138 @@
+.faq {
+	padding-top: 16px;
+}
+
+.faq-list {
+	counter-reset: item;
+}
+
+#faq .faq-list-item {
+	counter-increment: item;
+	position: relative;
+	padding-left: 36px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.faq-list-item:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.faq-list-item::before {
+	content: counter(item, decimal-leading-zero) ' ';
+	position: absolute;
+	left: 0;
+	font-family: Roboto;
+	font-size: 20px;
+	line-height: 0.7;
+	font-weight: 400;
+	color: #e7e7e7;
+}
+
+#faq .faq-list-item-button {
+	border: none;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.8);
+	padding: 0;
+}
+
+#faq .ac .ac-trigger::after {
+	display: none;
+}
+
+#faq .ac-text {
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.6);
+	padding: 0;
+	text-align: justify;
+	padding-right: 32px;
+}
+
+.faq-list-item-button-text {
+	display: block;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: left;
+}
+
+.faq-list-item-button-svgwrapper {
+	display: flex;
+	width: 32px;
+	height: 32px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+
+.faq-list-item-button-svg {
+	fill: #e7e7e7;
+	height: 14px;
+	width: 9px;
+}
+
+#faq .faq-list-item {
+	padding-bottom: 8px;
+}
+
+#faq .faq-list-item.is-active {
+	padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+	.faq {
+		padding-top: 100px;
+	}
+	#faq .faq-list-item {
+		padding-bottom: 12px;
+	}
+	.faq-list-item-button-text {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.faq {
+		padding-top: 170px;
+	}
+	.faq .container {
+		padding: 0 190px;
+	}
+	.faq-list-item:not(:last-child) {
+		margin-bottom: 84px;
+	}
+	.faq-list-item-button-text {
+		font-weight: 600;
+		font-size: 28px;
+	}
+	.faq-list-item::before {
+		font-size: 28px;
+		line-height: 1.25;
+	}
+	#faq .faq-list-item {
+		padding-left: 60px;
+		padding-bottom: 5px;
+	}
+	#faq .ac-text {
+		font-size: 20px;
+		line-height: 1.45;
+		width: 929px;
+	}
+}

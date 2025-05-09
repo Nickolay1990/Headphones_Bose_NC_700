@@ -6,6 +6,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
 const mediaQuery = window.matchMedia('(min-width: 1440px)');
 const swiper = new Swiper('.swiper', {
 	modules: [Pagination],
@@ -18,6 +21,11 @@ const swiper = new Swiper('.swiper', {
 		},
 	},
 });
+
+const accordion = new Accordion('.faq-list', {
+	duration: 400,
+});
+accordion.open();
 
 DOM.mobileMenuToggleButtons.forEach(button => button.addEventListener('click', HANDLERS.mobileMenuHandler));
 DOM.toggleModalButtons.forEach(button => button.addEventListener('click', HANDLERS.modalWindowHandler));
