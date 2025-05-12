@@ -1,4 +1,5 @@
 import { DOM } from './navigation';
+import whiteMob from '../img/order/order-white-mob.jpg';
 
 export function mobileMenuHandler() {
 	DOM.mobileMenu.classList.toggle('is-open');
@@ -24,4 +25,8 @@ export function iframeHandler(event) {
 	const title = newTitles[0].cloneNode(true);
 	document.querySelector('#reviews .container').prepend(title);
 	newTitles.forEach(titleForRemove => titleForRemove.remove());
+}
+
+export function radioButtonHandler() {
+	DOM.changebleImage.forEach(picture => picture.classList.toggle('visually-hidden'));
 }

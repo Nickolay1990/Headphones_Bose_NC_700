@@ -31,5 +31,6 @@ DOM.mobileMenuToggleButtons.forEach(button => button.addEventListener('click', H
 DOM.toggleModalButtons.forEach(button => button.addEventListener('click', HANDLERS.modalWindowHandler));
 DOM.navigationLinks.forEach(link => link.addEventListener('click', HANDLERS.mobileMenuHandler));
 mediaQuery.addEventListener('change', HANDLERS.iframeHandler);
+DOM.radioButtons.forEach(button => button.addEventListener('change', HANDLERS.radioButtonHandler));
 
-iframeHandler(mediaQuery);
+HANDLERS.iframeHandler(mediaQuery);

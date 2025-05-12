@@ -1,0 +1,160 @@
+.order .section-image {
+	margin-bottom: 32px;
+}
+
+.order-radio-wrapper {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 32px;
+}
+
+.order-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.order-label-span {
+	height: 44px;
+	width: 44px;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.order-label-span-inner {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #000;
+	border: none;
+}
+
+.black-radio {
+	background-color: #1d1d1d;
+}
+
+.white-radio {
+	background-color: #cfcfcf;
+}
+
+.white-radio .order-label-span-inner {
+	background-color: #fcfcfc;
+}
+
+.order-radio:checked + .order-label-span > .order-label-span-inner {
+	border: 2px solid #df3d3a;
+}
+
+.order-list {
+	border-top: 2px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+	margin-bottom: 32px;
+}
+
+.order-list-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	font-size: 16px;
+}
+
+.order-list-item:not(:last-child) {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.order-list-item-button {
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-color: transparent;
+	padding: 5px;
+}
+
+.order-list-item-button-svg {
+	width: 20px;
+	height: 20px;
+	stroke: red;
+}
+
+.order-price {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #df3d3a;
+	margin-bottom: 24px;
+}
+
+.order-button {
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	height: 58px;
+	background-color: #df3d3a;
+	border: none;
+}
+
+@media screen and (min-width: 768px) {
+	.order-label-span {
+		height: 58px;
+		width: 58px;
+		padding: 8px;
+	}
+	.order-radio-wrapper {
+		margin-bottom: 40px;
+	}
+	.order-list {
+		margin-bottom: 52px;
+	}
+	.order-price {
+		margin-bottom: 32px;
+		font-size: 30px;
+	}
+	.order-button {
+		width: 294px;
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.order .container {
+		padding-left: 190px;
+		padding-right: 0;
+		position: relative;
+	}
+	.order .for-change {
+		width: 700px;
+		height: 664px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.order-section-wrapper {
+		width: 400px;
+	}
+	.order-radio-wrapper {
+		margin-bottom: 50px;
+	}
+	.order-label-span {
+		height: 70px;
+		width: 70px;
+	}
+	.order-list {
+		margin-bottom: 50px;
+	}
+	.order-price {
+		font-size: 54px;
+	}
+	.order-button {
+		width: 100%;
+		height: 68px;
+		font-size: 20px;
+	}
+}

@@ -4,4 +4,6 @@ export const DOM = {
 	toggleModalButtons: document.querySelectorAll('[data-modal]'),
 	modalWindow: document.querySelector('.backdrop'),
 	navigationLinks: document.querySelectorAll('.mobile-menu a'),
+	radioButtons: document.querySelectorAll('.order-radio'),
+	changebleImage: document.querySelectorAll('.order-picture'),
 };
