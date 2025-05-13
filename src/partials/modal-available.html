@@ -1,0 +1,63 @@
+<div class="backdrop" id="modal-available">
+	<div class="modal">
+		<button class="modal-close-btn" data-modal-available data-toggle-modal>
+			<svg width="30" height="30">
+				<use href="/symbol-defs.svg#icon-close-large"></use>
+			</svg>
+		</button>
+		<h2 class="section-main-title">Availability in stores</h2>
+		<div class="available-wrapper">
+			<picture>
+				<source
+					media="(max-width: 767px)"
+					srcset="/img/order/order-black-mob.jpg 1x, /img/order/order-black-mob@2x.jpg 2x"
+				/>
+				<source
+					media="(min-width: 1440px)"
+					srcset="/img/order/order-black-desk.jpg 1x, /img/order/order-black-desk@2x.jpg 2x"
+				/>
+				<source
+					media="(min-width: 768px)"
+					srcset="/img/order/order-black-tab.jpg 1x, /img/order/order-black-tab@2x.jpg 2x"
+				/>
+				<img
+					src="/img/order/order-black-mob.jpg"
+					srcset="/img/order/order-black-mob@2x.jpg 2x"
+					alt="colors of heardphones"
+					class="modal-available-img"
+				/>
+			</picture>
+			<div class="available-wrapper-inner">
+				<p class="section-text">The item is in stock. It is available for order</p>
+				<button type="button" class="hero-order-btn" data-modal data-toggle-modal data-inner-toggle>Order item</button>
+			</div>
+		</div>
+
+		<div class="available-wrapper">
+			<picture>
+				<source
+					media="(max-width: 767px)"
+					srcset="/img/order/order-white-mob.jpg 1x, /img/order/order-white-mob@2x.jpg 2x"
+				/>
+				<source
+					media="(min-width: 1440px)"
+					srcset="/img/order/order-white-desk.jpg 1x, /img/order/order-white-desk@2x.jpg 2x"
+				/>
+				<source
+					media="(min-width: 768px)"
+					srcset="/img/order/order-white-tab.jpg 1x, /img/order/order-white-tab@2x.jpg 2x"
+				/>
+				<img
+					src="/img/order/order-white-mob.jpg"
+					srcset="/img/order/order-white-mob@2x.jpg 2x"
+					alt="colors of heardphones"
+					class="modal-available-img"
+				/>
+			</picture>
+			<div class="available-wrapper-inner">
+				<p class="section-text not-available-text">The item is out of stock and not available for order.</p>
+				<button type="button" class="hero-order-btn" disabled>Order item</button>
+			</div>
+		</div>
+	</div>
+</div>

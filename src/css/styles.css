@@ -11,6 +11,7 @@
 @import url(./reviews.css);
 @import url(./faq.css);
 @import url(./order.css);
+@import url(./modal-available.css);
 
 @font-face {
 	font-family: 'Gilroy';
@@ -100,6 +101,10 @@ a {
 
 .hidden {
 	display: none;
+}
+
+.no-scroll {
+	overflow: hidden;
 }
 
 /* ================================== general */

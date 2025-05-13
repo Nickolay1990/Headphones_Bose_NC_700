@@ -77,6 +77,11 @@
 	width: 20px;
 	height: 20px;
 	stroke: red;
+	transition: stroke 250ms;
+}
+
+.order-button:hover {
+	background-position: -100% 100%;
 }
 
 .order-price {
@@ -99,6 +104,18 @@
 	height: 58px;
 	background-color: #df3d3a;
 	border: none;
+
+	background-size: 200% 100%;
+	background-image: linear-gradient(to right, transparent 50%, #b5302d 50%);
+	transition: background-position 0.5s, background-color 0.5s;
+}
+
+.order-label:hover {
+	cursor: pointer;
+}
+
+.order-list-item-button:hover .order-list-item-button-svg {
+	stroke: aliceblue;
 }
 
 @media screen and (min-width: 768px) {
