@@ -1,0 +1,30 @@
+<div class="backdrop" id="modal-payment">
+	<div class="modal">
+		<button class="modal-close-btn" data-toggle-modal data-payment-modal>
+			<svg width="30" height="30">
+				<use href="/symbol-defs.svg#icon-close-large"></use>
+			</svg>
+		</button>
+		<h2 class="form-text">Payment and delivery methods</h2>
+		<form name="order" class="modal-form">
+			<label class="modal-form-label"
+				>Choose a payment method:
+				<select class="disabled-select" name="payment" id="payment-select" required data-modal-select>
+					<option value="not_selected" class="disabled-select" disabled selected>Not selected</option>
+					<option value="card">CARD</option>
+					<option value="cash">CASH (once received)</option>
+				</select>
+			</label>
+			<label class="modal-form-label">
+				Choose a delivery method:
+				<select class="disabled-select" name="payment" id="delivery select" required data-modal-select>
+					<option class="disabled-select" value="" disabled selected>Not selected</option>
+					<option value="courier">Courier delivery</option>
+					<option value="post_office">Pickup from post office</option>
+					<option value="store">Pick up in store</option>
+				</select>
+			</label>
+			<button type="button" class="hero-order-btn" data-toggle-modal data-show-call>Order</button>
+		</form>
+	</div>
+</div>

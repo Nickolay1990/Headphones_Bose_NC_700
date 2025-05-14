@@ -1,0 +1,13 @@
+#modal-payment .modal-form {
+	gap: 40px;
+}
+
+#modal-payment .hero-order-btn {
+	margin-top: 0;
+}
+
+.disabled-select {
+	background-color: #c0c7c4;
+	color: #626664;
+	border: 1px solid red;
+}

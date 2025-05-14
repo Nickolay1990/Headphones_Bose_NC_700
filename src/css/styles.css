@@ -12,6 +12,7 @@
 @import url(./faq.css);
 @import url(./order.css);
 @import url(./modal-available.css);
+@import url(./modal-payment.css);
 
 @font-face {
 	font-family: 'Gilroy';
@@ -64,6 +65,11 @@ a {
 	text-decoration: none;
 	color: currentColor;
 	transition: color 250ms;
+}
+
+input,
+select {
+	outline: none;
 }
 
 .container {
