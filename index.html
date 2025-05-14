@@ -20,7 +20,7 @@
 		<script type="module" crossorigin src="/Practice_7/index.js"></script>
 		<link rel="modulepreload" crossorigin href="/Practice_7/assets/vendor-BVURhQ1s.js">
 		<link rel="stylesheet" crossorigin href="/Practice_7/assets/vendor-DQwYf1mT.css">
-		<link rel="stylesheet" crossorigin href="/Practice_7/assets/index-Nu6uJJCL.css">
+		<link rel="stylesheet" crossorigin href="/Practice_7/assets/index-C90uAGeh.css">
 	</head>
 	<body>
 		<header>
@@ -90,7 +90,7 @@
 			<p class="hero-second-text">Up to 20 hours of playback</p>
 			<div class="hero-inner-wrapper">
 				<h1 class="hero-title">Headphones Bose NC 700</h1>
-				<button class="hero-order-btn" data-modal data-toggle-modal>order</button>
+				<button class="hero-order-btn" data-toggle-modal data-modal-data>order</button>
 			</div>
 		</div>
 		<picture>
@@ -571,7 +571,7 @@
 			<ul class="order-list">
 				<li class="order-list-item">
 					Availability in stores
-					<button type="button" class="order-list-item-button" data-modal-available data-toggle-modal>
+					<button type="button" class="order-list-item-button" data-toggle-modal data-available-modal>
 						<svg class="order-list-item-button-svg">
 							<use href="/Practice_7/assets/symbol-defs-B4pFSMeu.svg#arrow"></use>
 						</svg>
@@ -587,7 +587,7 @@
 				</li>
 				<li class="order-list-item">
 					Payment and delivery methods
-					<button type="button" class="order-list-item-button">
+					<button type="button" class="order-list-item-button" data-toggle-modal data-payment-modal>
 						<svg class="order-list-item-button-svg">
 							<use href="/Practice_7/assets/symbol-defs-B4pFSMeu.svg#arrow"></use>
 						</svg>
@@ -595,16 +595,47 @@
 				</li>
 			</ul>
 			<p class="order-price">14 999 UAH</p>
-			<button class="order-button" type="button" data-modal data-toggle-modal>Заказать</button>
+			<button class="order-button" type="button" data-toggle-modal data-modal-data>Заказать</button>
 		</div>
 	</div>
 </section>
 
+			<div class="backdrop" id="modal-payment">
+	<div class="modal">
+		<button class="modal-close-btn" data-toggle-modal data-payment-modal>
+			<svg width="30" height="30">
+				<use href="/Practice_7/symbol-defs.svg#icon-close-large"></use>
+			</svg>
+		</button>
+		<h2 class="form-text">Payment and delivery methods</h2>
+		<form name="order" class="modal-form">
+			<label class="modal-form-label"
+				>Choose a payment method:
+				<select class="disabled-select" name="payment" id="payment-select" required data-modal-select>
+					<option value="not_selected" class="disabled-select" disabled selected>Not selected</option>
+					<option value="card">CARD</option>
+					<option value="cash">CASH (once received)</option>
+				</select>
+			</label>
+			<label class="modal-form-label">
+				Choose a delivery method:
+				<select class="disabled-select" name="payment" id="delivery select" required data-modal-select>
+					<option class="disabled-select" value="" disabled selected>Not selected</option>
+					<option value="courier">Courier delivery</option>
+					<option value="post_office">Pickup from post office</option>
+					<option value="store">Pick up in store</option>
+				</select>
+			</label>
+			<button type="button" class="hero-order-btn" data-toggle-modal data-show-call>Order</button>
+		</form>
+	</div>
+</div>
+
 		</main>
 
-		<div class="backdrop">
+		<div class="backdrop" id="modal-window">
 	<div class="modal">
-		<button class="modal-close-btn" data-modal data-toggle-modal>
+		<button class="modal-close-btn" data-toggle-modal data-modal-data>
 			<svg width="30" height="30">
 				<use href="/Practice_7/symbol-defs.svg#icon-close-large"></use>
 			</svg>
@@ -630,7 +661,7 @@
 
 		<div class="backdrop" id="modal-available">
 	<div class="modal">
-		<button class="modal-close-btn" data-modal-available data-toggle-modal>
+		<button class="modal-close-btn" data-available-modal data-toggle-modal>
 			<svg width="30" height="30">
 				<use href="/Practice_7/symbol-defs.svg#icon-close-large"></use>
 			</svg>
@@ -659,7 +690,7 @@
 			</picture>
 			<div class="available-wrapper-inner">
 				<p class="section-text">The item is in stock. It is available for order</p>
-				<button type="button" class="hero-order-btn" data-modal data-toggle-modal data-inner-toggle>Order item</button>
+				<button type="button" class="hero-order-btn" data-toggle-modal data-show-payment>Order item</button>
 			</div>
 		</div>
 
