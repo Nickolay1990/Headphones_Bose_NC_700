@@ -1,0 +1,44 @@
+<section class="feedback">
+	<div class="container" id="container-without-padding">
+		<picture>
+			<source
+				media="(max-width: 767px)"
+				srcset="/img/feedback/feedback-mob.jpg 1x, /img/feedback/feedback-mob@2x.jpg 2x"
+			/>
+			<source
+				media="(min-width: 1440px)"
+				srcset="/img/feedback/feedback-desk.jpg 1x, /img/feedback/feedback-desk@2x.jpg 2x"
+			/>
+			<source
+				media="(min-width: 768px)"
+				srcset="/img/feedback/feedback-tab.jpg 1x, /img/feedback/feedback-tab@2x.jpg 2x"
+			/>
+			<img
+				src="/img/feedback/feedback-mob.jpg"
+				srcset="/img/feedback/feedback-mob@2x.jpg 2x"
+				alt="Woomen in the heardphones"
+				class="section-image"
+			/>
+		</picture>
+	</div>
+
+	<div class="container flex-container">
+		<div class="feedback-inner-wrapper">
+			<h2 class="section-main-title">Feedback</h2>
+			<p class="feedback-section-text">We'll help you find the right headphones for you.</p>
+		</div>
+		<form class="feedback-form">
+			<input type="text" class="feedback-form-input" placeholder="Your name" />
+			<input type="email" class="feedback-form-input" placeholder="Your e-mail" id="input-email" />
+			<textarea placeholder="Send us a message" class="feedback-form-input feedback-form-area"></textarea>
+			<label class="feedback-form-label">
+				<input type="checkbox" class="visually-hidden feedback-form-label-checkbox" />
+				<svg class="feedback-form-label-svg">
+					<use href="/img/symbol-defs.svg#done"></use>
+				</svg>
+				<p class="section-text">I agree to the <a href="#" class="feedback-form-label-link"> privacy policy</a></p>
+			</label>
+			<button type="submit" class="feedback-form-button">send</button>
+		</form>
+	</div>
+</section>

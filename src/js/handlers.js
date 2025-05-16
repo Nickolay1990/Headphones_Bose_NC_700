@@ -56,3 +56,12 @@ export function modalSelectHandler(event) {
 	}
 	this.classList.remove('disabled-select');
 }
+
+export function inputEmailHandler(event) {
+	const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+	if (!pattern.test(this.value)) {
+		this.classList.add('error-message');
+		return;
+	}
+	this.classList.remove('error-message');
+}

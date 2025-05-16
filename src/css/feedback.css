@@ -1,0 +1,163 @@
+.feedback {
+	padding-top: 88px;
+}
+
+.feedback .section-image {
+	margin-bottom: 16px;
+}
+
+.feedback-section-text {
+	font-size: 16px;
+}
+
+.feedback-inner-wrapper {
+	margin-bottom: 24px;
+}
+
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.feedback-form-input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	height: 52px;
+	margin-bottom: 16px;
+	padding: 16px 0;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+	font-size: 20px;
+	line-height: 0.7;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.feedback-form-input:focus {
+	border-bottom: 2px solid #df3d3a;
+}
+
+.feedback-form-input::placeholder {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.feedback-form-area {
+	resize: none;
+	height: 96px;
+	margin-bottom: 40px;
+}
+
+.feedback-form-label {
+	margin-bottom: 40px;
+	display: flex;
+	position: relative;
+	padding-left: 5px;
+}
+
+.feedback-form-label-link {
+	text-decoration: underline;
+}
+
+.feedback-form-label .section-text::before {
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 28px;
+	border: 2px solid #e9edfa;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.feedback-form-label-svg {
+	fill: transparent;
+	stroke: transparent;
+	width: 22px;
+	height: 18px;
+	margin-right: 24px;
+}
+
+.feedback-form-label-checkbox:checked + .feedback-form-label-svg {
+	stroke: #df3d3a;
+}
+
+.feedback-form-button {
+	width: 100%;
+	height: 58px;
+	border: 1px solid #df3d3a;
+	background-color: transparent;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.error-message {
+	color: #ea4335;
+}
+
+@media screen and (min-width: 768px) {
+	.feedback {
+		padding-top: 100px;
+	}
+	.feedback .section-image {
+		margin-bottom: 100px;
+	}
+	.feedback-section-text {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 1.25;
+		color: #e7e7e7;
+	}
+	.feedback-inner-wrapper {
+		margin-bottom: 52px;
+	}
+	.feedback-form-label {
+		margin-bottom: 52px;
+	}
+	.feedback-form-button {
+		width: 294px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.feedback {
+		padding-top: 170px;
+	}
+	#container-without-padding {
+		padding: 0;
+	}
+	.feedback .container {
+		padding: 0 190px;
+	}
+	.feedback .section-image {
+		margin-bottom: 170px;
+	}
+	.flex-container {
+		display: flex;
+		gap: 150px;
+	}
+	.feedback-inner-wrapper {
+		margin-bottom: 0;
+		width: 400px;
+	}
+	.feedback-form {
+		width: 510px;
+	}
+	.feedback-form-input::placeholder {
+		font-size: 20px;
+	}
+	.feedback-form-input {
+		margin-bottom: 26px;
+	}
+	.feedback-form-area {
+		margin-bottom: 52px;
+	}
+	.feedback-form-label {
+		margin-bottom: 89px;
+	}
+	.feedback-form-button {
+		width: 100%;
+	}
+}

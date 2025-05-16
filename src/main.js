@@ -33,5 +33,6 @@ DOM.navigationLinks.forEach(link => link.addEventListener('click', HANDLERS.mobi
 mediaQuery.addEventListener('change', HANDLERS.iframeHandler);
 DOM.radioButtons.forEach(button => button.addEventListener('change', HANDLERS.radioButtonHandler));
 DOM.modalPaymentSelects.forEach(select => select.addEventListener('change', HANDLERS.modalSelectHandler));
+DOM.inputEmail.addEventListener('input', HANDLERS.inputEmailHandler);
 
 HANDLERS.iframeHandler(mediaQuery);
