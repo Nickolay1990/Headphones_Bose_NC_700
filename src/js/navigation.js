@@ -10,4 +10,5 @@ export const DOM = {
 	modalPaymentWindow: document.querySelector('#modal-payment'),
 	modalPaymentSelects: document.querySelectorAll('[data-modal-select]'),
 	inputEmail: document.querySelector('#input-email'),
+	orderForm: document.querySelector('form[name="order"]'),
 };

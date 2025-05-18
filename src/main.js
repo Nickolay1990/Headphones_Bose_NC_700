@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper', {
 		el: '.swiper-pagination',
 		clickable: true,
 		renderBullet: function (index, className) {
-			return `<span class="${className}">0${index + 1}</span>`;
+			return `<span class="${className}"><span class="swiper-hover-span">0${index + 1}</span></span>`;
 		},
 	},
 });
@@ -34,5 +34,6 @@ mediaQuery.addEventListener('change', HANDLERS.iframeHandler);
 DOM.radioButtons.forEach(button => button.addEventListener('change', HANDLERS.radioButtonHandler));
 DOM.modalPaymentSelects.forEach(select => select.addEventListener('change', HANDLERS.modalSelectHandler));
 DOM.inputEmail.addEventListener('input', HANDLERS.inputEmailHandler);
+DOM.orderForm.addEventListener('submit', HANDLERS.orderFormHandler);
 
 HANDLERS.iframeHandler(mediaQuery);

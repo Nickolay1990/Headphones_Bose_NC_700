@@ -9,6 +9,7 @@ export function modalWindowHandler(event) {
 	if (event.currentTarget.hasAttribute('data-show-payment')) {
 		DOM.modalAvailableWindow.classList.toggle('is-open');
 		DOM.modalPaymentWindow.classList.toggle('is-open');
+
 		return;
 	}
 	if (event.currentTarget.hasAttribute('data-show-call')) {
@@ -64,4 +65,8 @@ export function inputEmailHandler(event) {
 		return;
 	}
 	this.classList.remove('error-message');
+}
+
+export function orderFormHandler() {
+	history.replaceState(null, '', window.location.pathname + window.location.search);
 }

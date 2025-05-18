@@ -11,12 +11,28 @@
 	background-color: transparent;
 	font-size: 20px;
 	font-family: Roboto;
-	color: #df3d3a;
+	opacity: 1;
 }
 
 #reviews .swiper-pagination-bullet:not(:last-child)::after {
 	content: '-';
 	margin-left: 20px;
+	pointer-events: none;
+	color: #df3d3a;
+	opacity: 0.3;
+}
+.swiper-hover-span {
+	opacity: 0.3;
+	color: #df3d3a;
+	transition: opacity 250ms;
+}
+
+.swiper-hover-span:hover {
+	opacity: 1;
+}
+
+#reviews .swiper-pagination-bullet-active .swiper-hover-span {
+	opacity: 1;
 }
 
 #reviews iframe {
